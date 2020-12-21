@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+p{
+    font-weight:300;
+    color:white;
+}
+
+.banner{
+    position:relative;
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:url(bg-1.jpg);
+    background-size:cover;
+}
+.banner .content{
+    max-width:900px;
+    text-align:center;
+}
+.banner .content h2{
+    font-size:5em;
+    color:greenyellow;
+}
+.btn{
+    font-size:1em;
+    color:white;
+    background:green;
+    display:inline-block;
+    padding:10px 30px;
+    margin-top:20px;
+    text-transform:uppercase;
+    text-decoration:none;
+    letter-spacing:2px;
+    transition: .5s;
+}
+.btn:hover{
+    letter-spacing:6px;
+}
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:40px 100px;
+    z-index:1;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    transition:.5s;
+}
+header.sticky{
+    background:green;
+    padding:10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header .logo{
+    color:white;
+    font-weight:700;
+    font-size:2em;
+    text-decoration:none;
+}
+header .logo span{
+    color:greenyellow;
+}
+header .nav{
+    position:relative;
+    display:flex;
+}
+header .nav li{
+    list-style:none;
+    margin-left:30px;
+}
+header .nav li a{
+    text-decoration:none;
+    color:white;
+    font-weight:300;
+}
+header .nav li a:hover{
+    color:greenyellow;
+}
+section{
+    padding:100px;
+}
+.row{
+    position:relative;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+.row .col50{
+    position: relative;
+    width:48%;
+}
+.titleText{
+    color:#111;
+    font-size:2em;
+    font-weight:300;
+}
+.titleText span{
+    color:green;
+    font-weight:700;
+    font-size:1.5em;
+}
+.row .col50 .imgBox{
+    position:relative;
+    width:100%;
+    /*min-height:300px;*/
+    height:100%;
+    max-width:630px;
+}
+.row .col50 .imgBox img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.title{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu .content{
+    display:flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+.menu .content .box{
+    width:340px;
+    margin:20px;
+    border:15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+.menu .content .box .imgBox{
+    position:relative;
+    width:100%;
+    height:300px
+}
+.menu .content .box .imgBox img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.menu .content .box .text{
+    padding:15px 0 15px;
+}
+.menu .content .box .text h3{
+    font-weight:300;
+    color:green;
+}
+
+.expert .content{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    flex-direction: row;
+    margin-top:40px;
+}
+.expert .content .box{
+    width:250px;
+    margin:15px;
+}
+.expert .content .box  .imgBox{
+    position:relative;
+    width:100%;
+    height:300px;
+}
+
+.expert .content .box .imgBox img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.expert .content .box .text{
+    padding:15px 0 15px;
+}
+
+.expert .content .box .text h3{
+    font-weight:300;
+    color:green;
+}
+.testi{
+    background:url(bg-2.jpg);
+    background-size:cover;
+}
+.testi .content{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    flex-direction: row;
+    margin-top:40px;
+}
+.testi .content .box{
+    width:340px;
+    margin:20px;
+    padding:40px;
+    background:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.testi .content .box .imgBox{
+    position: relative;
+    width:80px;
+    height:80px;
+    margin-bottom:20px;
+    border-radius:50%;
+    overflow:hidden;
+}
+.testi .content .box .imgBox img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.testi .content .box .text{
+   
+    text-align:center;
+}
+.testi .content .box .text p{
+    color:black;
+    font-style:italic;
+
+}
+.testi .content .box .text h3{
+    margin-top:20px;
+    color:green;
+    font-size:1em;
+    font-weight:600;
+}
+#testi .title p{
+    color:white;
+}
+#testi h2.titleText{
+    color:white;
+}
+.contact{
+    background:url(bg-4.jpg);
+    background-size:cover;
+}
+.contactform{
+    padding:35px 40px;
+    background:white;
+    box-shadow:0 15px 50px rgba(0,0,0,0.1);
+    max-width:500px;
+    margin-top:20px;
+    margin-bottom:30px;
+}
+.contactform h3{
+    font-size:1.2em;
+    color:green;
+    margin-bottom:20px;
+    font-weight:500;
+
+}
+.contactform .input-info{
+    position:relative;
+    width:100%;
+    margin-bottom:20px;
+}
+.contactform .input-info input,
+.contactform .input-info textarea
+{
+    width:100%;
+    border:1px solid #555;
+    color:green;
+    outline:none;
+    font-size:16px;
+    font-weight:300;
+    resize:none;
+}
+.contactform .input-info input[type='submit']{
+    font-size:1em;
+    color:white;
+    background:green;
+    display:inline-block;
+    text-transform:uppercase;
+    text-decoration:none;
+    letter-spacing:2px;
+    transition: .5s;
+    max-width:100px;
+    font-weight:500;
+    border:none;
+    cursor: pointer;
+    padding:7px;
+}
+
+footer p{
+    color:gray;
+    padding:8px 40px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color:green;
+}/*mobile feature*/
+@media(max-width:991px){
+   header{
+       margin:0;
+       padding:0;
+   }
+    header .nav{
+        display:none;
+    }
+    header .nav.active{
+
+        width:100%;
+        height:calc(100% - 60px);
+        position:fixed;
+        top:60px;
+        left:0;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background:green;
+
+    }
+    header .nav li{
+        margin-left:0;
+    }
+    header .nav li a{
+        text-decoration:none;
+        font-size:1.6em;
+        font-weight:300;
+    }
+    header.sticky .menuToggle{
+        filter:invert(1);
+    }
+    .menuToggle{
+        position:relative;
+        width:40px;
+        height:40px;
+        background:url(menu.png);
+        background-size:30px;
+        background-repeat:no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active{
+        background:url(close.png);
+        background-size:25px;
+        background-repeat:no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    section{
+        padding:20px;
+    }
+    .banner .content h2{
+        font-size:3em;
+
+    }
+    .row{
+        flex-direction:column;
+    }
+    .row .col50{
+        position:relative;
+        width:100%;
+    }
+    .row .col50 .imgBox{
+        height:300px;
+        margin-top:20px;
+    }
+    .menu .content{
+       
+        margin-top:20px;
+    }
+    .menu .content .box{
+        margin:10px;
+    }
+    .menu .content .box .imgBox{
+        height:260px;
+    }
+    .title{
+        text-align:center;
+    }
+    .titleText{
+        font-size:1.8em;
+        line-height:1.5em;
+        margin-bottom:15px;
+        font-weight:300;
+    }
+    .testi .content .box{
+        margin:20px;
+        padding:40px;
+    }
+    .contactform{
+        padding:35px 50px;
+        margin-top:20px;
+        margin-top:30px;
+    }
+
+}
+@media(max-width:480px){
+    .banner .content h2{
+        font-size:2.2em;
+
+    }
+}
+
+.col50 p, .title P, h3 {
+    color:black;
+}
